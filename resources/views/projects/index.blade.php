@@ -1,4 +1,3 @@
-<!-- resources/views/projects/index.blade.php -->
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -48,18 +47,6 @@
                                                     onclick="return confirm('Apakah Anda yakin ingin menghapus projek ini?')">Hapus</button>
                                             </form>
                                         </td>
-
-                                        {{-- <td class="px-6 py-4 whitespace-nowrap space-x-2">
-                                            <a href="{{ route('projects.edit', $project->id) }}"
-                                                class="inline-block bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-700">Edit</a>
-                                            <form action="{{ route('projects.destroy', $project->id) }}" method="POST"
-                                                class="inline-block">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit"
-                                                    class="inline-block bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700">Delete</button>
-                                            </form>
-                                        </td> --}}
                                     </tr>
                                 @endforeach
                             </tbody>
